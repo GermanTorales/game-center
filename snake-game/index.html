@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Snake Game</title>
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="header">
+        <div class="title">
+          <h1>Snake Game</h1>
+        </div>
+
+        <div class="options">
+          <div class="buttons">
+            <button class="btn" id="start">Start</button>
+            <button class="btn" id="pause">Pause</button>
+            <button class="btn" id="restart">Restart</button>
+          </div>
+        </div>
+
+        <div class="information">
+          <h1>Score: <span id="score">0</span></h1>
+        </div>
+      </div>
+
+      <div class="board">
+        <canvas id="canvas" width="600" height="600"></canvas>
+      </div>
+    </div>
+
+    <div class="modal" id="gameover">
+      <div class="modal-content">
+        <div id="game-over-text">
+          <h1>Game Over</h1>
+        </div>
+
+        <div id="game-over-score">
+          <h2>Your Score: <span id="final-score">0</span></h2>
+        </div>
+
+        <div id="game-over-restart">
+          <button class="btn" id="restart-game">Restart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="difficulty">
+      <div class="modal-content">
+        <div id="difficulty-text">
+          <h1>Select Dificulty</h1>
+        </div>
+
+        <div id="difficulty-options">
+          <button class="btn btn-difficulty" id="easy">Easy</button>
+          <button class="btn btn-difficulty" id="medium">Medium</button>
+          <button class="btn btn-difficulty" id="hard">Hard</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
